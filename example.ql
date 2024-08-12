@@ -1,3 +1,14 @@
+/**
+ * @name JXPath CVE
+ * @description jxpath cve flow
+ * @kind path-problem
+ * @problem.severity error
+ * @security-severity 9.0
+ * @precision high
+ * @id java
+ * @tags cve
+ */
+
 import java
 import semmle.code.java.dataflow.TaintTracking
 import semmle.code.java.dataflow.FlowSources
