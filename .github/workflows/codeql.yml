@@ -74,7 +74,7 @@ jobs:
         java-version: 8.0.402+6
         
     - name: Build with Maven
-      run: mvn --errors --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false package
+      run: mvn --errors --show-version --batch-mode --no-transfer-progress -DtrimStackTrace=false -Drat.skip=true package
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@afb54ba388a7dca6ecae48f608c4ff05ff4cc77a    # 3.25.15
